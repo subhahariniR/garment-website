@@ -808,6 +808,9 @@ nav ul li a:hover {
   .about-container {
     gap: 80px;
   }
+  .about-container {
+    gap: 80px;
+  }
 
   .services-grid {
     grid-template-columns: repeat(4, 1fr);
