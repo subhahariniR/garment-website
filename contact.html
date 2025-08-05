@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Main CSS for Navbar & General Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Contact Page Specific CSS -->
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body> 
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">LOGO</div>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="printed.html">Pricing</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Contact Header ===== -->
+<section class="contact-header">
+  <h1>Contact Us</h1>
+  <h5>Home / Contact Us</h5>
+</section>
+
+<!-- ===== Contact Section ===== -->
+<section class="contact-section">
+  <div class="contact-container">
+
+    <!-- Map -->
+    <div class="map">
+      <iframe src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Contact Information</h2>
+      <p>Say something to start a live chat!</p>
+      <form>
+        <div class="input-row">
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Email" required>
+        </div>
+        <input type="text" placeholder="Phone Number" required>
+        <textarea placeholder="Additional Message"></textarea>
+        <button type="submit">Send Now</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Contact Info Section -->
+  <div class="contact-info">
+    <div class="contact-info-left">
+      <div class="info-item">
+        <img src="images/bxs_phone-call.png" alt="Phone">
+        <p>97913 67638</p>
+      </div>
+      <div class="info-item">
+        <img src="images/ic_sharp-email.png" alt="Email">
+        <p>sale@profenasaautomation.com</p>
+      </div>
+      <div class="info-item">
+        <img src="images/carbon_location-filled (1).png" alt="Location">
+        <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+      </div>
+      <div class="info-item1">
+        <img src="images/Group 2007.png" alt="Social Media">
+        <p>Facebook | LinkedIn | Instagram</p>
+      </div>
+    </div>
+
+    <div class="contact-info-right">
+      <img src="images/business-deal.png" alt="Business Meeting">
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+
+</body>
+</html>

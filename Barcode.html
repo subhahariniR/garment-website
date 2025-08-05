@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woven Labels</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Site Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Printed/Woven Labels Page Styles -->
+  <link rel="stylesheet" href="woven.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">LOGO</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HEADER ===== -->
+<section class="page-header">
+  <h1>Woven Labels</h1>
+  <h5>Home / Woven Labels</h5>
+</section>
+
+<!-- ===== MAIN CONTENT ===== -->
+<section class="printed-labels-wrapper">
+  <div class="printed-labels-card">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="printed.html">Printed Labels</a></li>
+        <li><a href="woven-label.html">Woven Labels</a></li>
+        <li class="active"><a href="barcode.html">Barcode Stickers</a></li>
+        <li><a href="heat-transfer.html">Heat Transfer Stickers</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="printed-content">
+      <h2>Barcode Stickers</h2>
+      <img src="images/bc.png" alt="Barcode Stickers" class="main-image">
+
+      <p>
+        Barcode stickers play a pivotal role in the textile and garment industry by enabling efficient inventory management, tracking, and identification of products throughout their lifecycle. These stickers, typically affixed to clothing tags or packaging, encode essential information such as product details, pricing, and logistics data in a scannable format. This technology not only enhances operational efficiency by facilitating rapid stocktaking and replenishment but also ensures accurate order fulfillment and seamless supply chain management. As a result, barcode stickers are indispensable tools that streamline processes and contribute to the overall productivity and competitiveness of textile and garment businesses.
+      </p>
+
+      <blockquote class="highlight-box">
+        Woven labels in garments ensure lasting brand visibility, offering premium quality and design versatility 
+        while withstanding the rigors of everyday wear and washing.
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<div id="footer-placeholder"></div>
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+<!-- Menu Toggle Script -->
+<script>
+  function toggleMenu() {
+    document.querySelector('nav ul').classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
