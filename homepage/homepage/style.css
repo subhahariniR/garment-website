@@ -816,54 +816,6 @@ nav ul li a:hover {
     grid-template-columns: repeat(4, 1fr);
   }
 }
-/* Align logo + title horizontally */
-.footer-title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.footer-logo {
-  width: 35px;
-  height: auto;
-}
-
-/* Below paragraph image */
-.footer-below-img {
-  margin-top: 15px;
-  width: 120px; /* adjust size */
-  height: auto;
-  display: block;
-}
 
 
-/* Remove underline from footer links */
-.footer-column ul li a {
-  text-decoration: none;
-  color: white; /* or your footer text color */
-  transition: color 0.3s ease;
-}
 
-.footer-column ul li a:hover {
-  color: #d4a8ff; /* Light purple hover color */
-}
-/* Footer contact info with icons */
-.footer-contact li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  color: white; /* Matches your footer text */
-}
-
-.footer-contact li img {
-  width: 20px; /* Adjust icon size */
-  height: 20px;
-  margin-right: 10px; /* Space between icon and text */
-}
-.footer-bottom {
-  margin-top: 40px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  padding-top: 15px;
-  text-align: center;
-  font-size: 14px;
-}

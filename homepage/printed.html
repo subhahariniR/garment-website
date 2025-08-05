@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Printed Labels</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Site Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Printed Labels Page Styles -->
+  <link rel="stylesheet" href="printed.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">LOGO</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="printed.html">Pricing</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== PAGE HEADER ===== -->
+<section class="page-header">
+  <h1>Printed Labels</h1>
+  <h5>Home / Printed Labels</h5>
+</section>
+
+<!-- ===== PRINTED LABELS SECTION ===== -->
+<section class="printed-labels-wrapper">
+  <div class="printed-labels-card">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li class="active"><a href="printed.html">Printed Labels</a></li>
+        <li><a href="woven-label.html">Woven Labels</a></li>
+        <li><a href="Barcode.html">Barcode Stickers</a></li>
+        <li><a href="heat-transfer.html">Heat Transfer Stickers</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="printed-content">
+      <h2>Printed Labels</h2>
+      <img src="images/Frame 2087327048.png" alt="Printed Labels Machine" class="main-image">
+
+      <p>
+        Printed labels in the textile and garment industry play a crucial role in branding, 
+        information dissemination, and regulatory compliance. These labels often include essential 
+        details such as the brand name, size, fabric composition, care instructions, and country of origin.
+        By providing this information, printed labels help consumers make informed decisions about the 
+        products they purchase and ensure they care for their garments appropriately.
+      </p>
+
+      <p>
+        They also contribute to a professional and polished look, enhancing the overall perceived quality 
+        of the clothing. Additionally, regulatory labels that comply with international standards are 
+        vital for manufacturers to meet legal requirements and avoid penalties.
+      </p>
+
+      <blockquote class="highlight-box">
+        Printed labels in textiles provide essential information about garment care, composition, 
+        and branding, ensuring consumer satisfaction and regulatory compliance. Advances in printing 
+        technology and sustainable materials enhance label durability and align with eco-friendly practices.
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<div id="footer-placeholder"></div>
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    });
+</script>
+
+<!-- Menu Toggle Script -->
+<script>
+  function toggleMenu() {
+    document.querySelector('nav ul').classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>

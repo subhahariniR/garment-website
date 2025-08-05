@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Garment Website</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <!-- Optional: extra styles for about page -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">LOGO</div>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== ABOUT HEADER ===== -->
+<section class="about-header" style="background-color:#7506b1; color:white; padding:60px 20px; text-align:center;">
+  <h1>About Us</h1>
+  <h5>Home / About us</h5>
+</section>
+
+<!-- ===== ABOUT SECTION ===== -->
+<section class="about-section">
+  <div class="about-container">
+
+    <!-- Left Column -->
+    <div class="about-left">
+      <a href="#" class="about-btn">ABOUT US</a>
+      <h2>Let’s Build Something Creative Together</h2>
+
+      <!-- Feature 1 -->
+<div class="feature-box stacked">
+  <img src="images/machine.png" alt="Labels Icon" class="feature-icon">
+  <h4>Labels</h4>
+  <p>Printed labels in the textile industry provide essential information about care instructions.</p>
+</div>
+
+<!-- Feature 2 -->
+<div class="feature-box stacked">
+  <img src="images/emoji.png" alt="Stickers Icon" class="feature-icon">
+  <h4>Stickers</h4>
+  <p>Bar code and heat wave stickers in the textile industry streamline inventory management.</p>
+</div>
+
+
+      <!-- Contact Button -->
+      <a href="#" class="contact-btn">Contact us</a>
+    </div>
+
+    <!-- Right Column (Main Image) -->
+    <div class="about-right">
+      <img src="images/garment1.png" alt="Garment Factory">
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== OUR AIM / BEST SERVICES SECTION ===== -->
+<section class="our-aim">
+  <a href="#" class="btn-tag">OUR AIM</a>
+  <h2>provide best solution Take Look Into <br> Our Best Services</h2>
+
+  <div class="services-grid">
+    <!-- Service 1 -->
+    <div class="service-box">
+      <img src="images/img1.png" alt="Labels products Icon">
+      <h4>Labels products and Accessories</h4>
+      <p>Labels, products, and accessories in the textile industry encompass a range of items that aid in brand identification and the enhancement of garment functionality.</p>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="service-box">
+      <img src="images/img2.png" alt="Technology Icon">
+      <h4>Innovations in Garment Technology Smart</h4>
+      <p>Innovations in garment technology smartly integrate advanced materials and electronics to create interactive, adaptive, and high-performance clothing.</p>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="service-box">
+      <img src="images/img3.png" alt="Sustainable Icon">
+      <h4>Sustainable Production in Garments</h4>
+      <p>Sustainable production in garments focuses on eco-friendly practices, reducing waste, and minimizing environmental impact throughout the manufacturing process.</p>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="service-box">
+      <img src="images/image.png" alt="Culture Icon">
+      <h4>Garments and Culture Exploring Role in it</h4>
+      <p>Garments play a pivotal role in culture, reflecting identity, traditions, and societal values across diverse communities.</p>
+    </div>
+
+    <!-- Service 5 -->
+    <div class="service-box">
+      <img src="images/img4.png" alt="Barcode Icon">
+      <h4>The Future of Bar Code Stickers Trends</h4>
+      <p>The future of barcode stickers trends towards enhanced durability, integration with digital systems.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== CTA SECTION ===== -->
+<section class="cta-banner">
+  <!-- Decorative Images -->
+  <img src="images/Vector (1).png" class="decor top-left" />
+  <img src="images/Vector (1).png" class="decor bottom-left" />
+  <img src="images/Vector (1).png" class="decor top-right" />
+  <img src="images/Vector (1).png" class="decor bottom-right" />
+
+  <!-- Content -->
+  <div class="cta-content">
+    <h2>Provide the highest quality work that meets your expectation</h2>
+    <a href="#" class="cta-button">Get Free Consultation</a>
+  </div>
+</section>
+<!-- Placeholder -->
+<div id="footer-placeholder"></div>
+
+<!-- Script to load footer -->
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer-placeholder").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading footer:", error));
+</script>
+
+
+
+<script>
+  function toggleMenu() {
+    document.querySelector('nav ul').classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>

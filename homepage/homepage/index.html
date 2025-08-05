@@ -28,26 +28,12 @@
     </div>
 
     <nav>
-<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="About.html">About Us</a></li> <!-- or About.html -->
-    <li><a href="printed.html">Pricing</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-</ul>
-<script>
-  function toggleMenu() {
-    document.querySelector('nav ul').classList.toggle('active');
-  }
-
-  // 🔽 Auto-close mobile menu on link click
-  document.querySelectorAll('nav ul li a').forEach(link => {
-    link.addEventListener('click', () => {
-      document.querySelector('nav ul').classList.remove('active');
-    });
-  });
-</script>
-
-
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
     </nav>
   </div>
 </header>
@@ -258,15 +244,43 @@
 
 
 <!-- Footer -->
-<div id="footer-placeholder"></div>
-<script>
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("footer-placeholder").innerHTML = data;
-    });
-</script>
-
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Tech World</h3>
+      <p>A team of experienced designers and developers dedicated to creating exceptional websites. Providing custom web solutions and Digital Marketing tailored to your specific business goals.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Service</h4>
+      <ul>
+        <li>Printed Label</li>
+        <li>Woven label</li>
+        <li>Barcode Stickers</li>
+        <li>Heat Transfer Stickers</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Pages</h4>
+      <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li>Contact us</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Contact</h4>
+      <ul>
+        <li>📞 (406) 555-0120</li>
+        <li>📧 mangcoding123@gmail.com</li>
+        <li>📍 2972 Westheimer Rd. Santa Ana, Illinois 85486</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© Copyrights 2023 Techmax All rights reserved.</p>
+    <p>Privacy policy | Term & Conditions</p>
+  </div>
+</footer>
 
 </script>
 
